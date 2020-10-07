@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cajazeiras | Dados Covid.</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+</head>
+<body id="page">
+
+    <div id="header">
+        <h2 class="cab">MONITORANDO O CORONAVÍRUS (COVID-19)</h2>
+        <h3 class="cab">Município de Cajazeiras - PB</h3>
+        <h4 class="cab">Sistema atualizado em: dd/mm/aaaa às hh:mm</h4>
+    </div>    
+    <div id="nav">
+        <ul>
+            <li><a href="{{ url_for('index.detail') }}" class="disable_underlined">BOLETIM</a></li>
+            <li><a href="/consulta.html" class="disable_underlined">EXAME</a></li>
+            <li><a href="/info.html" class="disable_underlined">REDES SOCIAIS</a></li>
+        </ul>
+    </div>
+    
+    <div id="content">
+        <div>
+            <h3>BOLETIM</h3>
+        </div>
+        <div id="article" class="article1">
+            <p>CONFIRMADOS</p>
+            <p>1699</p>
+        </div>
+        <div id="article" class="article2">
+            <p>EM ANÁLISE</p>
+            <p>44</p>
+        </div>
+        <div id="article" class="article3">
+            <p>DESCARTADOS</p>
+            <p>98</p>
+        </div>
+        <div id="article" class="article4">
+            <p>ÓBITOS</p>
+            <p>43</p>
+        </div>
+        <div id="article" class="article5">
+            <p>INTERNADOS</p>
+            <p>02</p>
+        </div>
+        <div id="article" class="article6">
+            <p>RECUPERADOS</p>
+            <p>1618</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p class="cop">&copy; 2020</p>
+    </div>
+
+</body>
+</html>
