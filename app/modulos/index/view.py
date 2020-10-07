@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, url_for 
+from flask import Blueprint, render_template
 
 main = Blueprint("main", __name__)
 
@@ -6,6 +6,3 @@ main = Blueprint("main", __name__)
 def homepage():
   return render_template('index.html')
 
-@main.route('/')
-def info():
-  return render_template('info.html')
